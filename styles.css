@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    background-color: #f4f4f9; /* Light grey background for the page */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50; /* Green background color for the header */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 1em 0; /* Padding for spacing */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points from list items */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items in a row */
+    margin: 0 10px; /* Spacing between items */
+}
+
+nav ul li a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+header p {
+    margin-top: 0.5em; /* Margin for spacing */
+}
+
+section {
+    padding: 2em; /* Padding inside the sections */
+    margin: 1em 0; /* Margin outside the sections */
+    background-color: white; /* White background color for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    animation: fadeIn 1s ease-in; /* Apply fade in animation to sections */
+}
+
+section img {
+    max-width: 100%; /* Ensure images do not overflow their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-top: 1em; /* Margin for spacing */
+}
+
+footer {
+    background-color: #333; /* Dark background color for the footer */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 1em 0; /* Padding for spacing */
+}
+
+button {
+    background-color: #4CAF50; /* Green background color for buttons */
+    border: none; /* Remove border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for buttons */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline-block display */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+form {
+    display: flex; /* Flexbox layout for form */
+    flex-direction: column; /* Vertical layout */
+}
+
+form label {
+    margin-top: 1em; /* Margin for spacing */
+}
+
+form input, form textarea {
+    padding: 0.5em; /* Padding inside inputs */
+    margin-top: 0.5em; /* Margin for spacing */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+form button {
+    margin-top: 1em; /* Margin for spacing */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with transparent */
+    }
+    to {
+        opacity: 1; /* Fade to opaque */
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack navigation items */
+        margin: 10px 0; /* Spacing between items */
+    }
+
+    section {
+        padding: 1em; /* Reduced padding for smaller screens */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    nav ul li {
+        display: inline-block; /* Inline block display for larger screens */
+        margin: 0 5px; /* Spacing between items */
+    }
+
+    section {
+        padding: 1.5em; /* Adjusted padding for tablets */
+    }
+}
+
+@media (min-width: 993px) {
+    nav ul li {
+        display: inline-block; /* Inline block display for larger screens */
+        margin: 0 10px; /* Spacing between items */
+    }
+
+    section {
+        padding: 2em; /* Padding for desktop screens */
+    }
+}
